@@ -1,0 +1,125 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration-Donors</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      </script>
+           <style>
+body{
+           background-color:#707B7C;
+           }
+             .container-fluid {
+             padding-top: 20px;
+             padding-bottom: 20px;
+            }
+           .navbar {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          font-size: 15px;
+          letter-spacing: 2px;
+          }
+
+        .navbar-nav li a:hover {
+         color: #4A96AD !important;
+         }
+          .sidenav {
+      padding-top: 100px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+   .form {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 20px 0px 50px 20px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+   <strong>
+      <a class="navbar-brand" href="BB.html">BLOOD DONATION</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html">Donate</a></li>
+        <li><a href="sfd.html">Search For Donors</a></li>
+        <li><a href="chennai.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </div>
+</strong>
+</nav> 
+   <div class=" text-left bg-1"> 
+    <div class="container form">
+
+    <form action="index1.php" method="post">
+      
+        <center><h2>Donate Blood Save Life</h2></center>
+       <br>
+        
+        <fieldset>
+          <label for="name">Name:</label> <br>
+          <input type="text" id="name" name="user_name">
+          <br>
+          <label for="dof">Date of Birth:</label> <br>
+          <input type="text" id="dof" name="User_dob">
+          <br>
+               <fieldset>	
+        <label for="age">Age:</label>&nbsp;&nbsp; <br>
+        <select id="age" name="user_age">
+        <optgroup label="        ">
+            <option value="18-25">18-25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="26-35">26--35&nbsp;&nbsp;</option>
+            <option value="36-45">36--45&nbsp;&nbsp;</option>
+            <option value="46-50">46--50&nbsp;&nbsp;</option>
+      </optgroup>
+        </select>
+          <br><br>
+          <label>Gender:</label>
+          &nbsp;
+          <input type="radio" id="male" value="male" name="user_gender"><label for="male" class="light">Male</label><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="female" value="female" name="user_gender"><label for="female" class="light">Female</label>
+        </fieldset>
+       
+          <label for="adrress">Address:</label><br>
+          <textarea id="adrress" name="user_address"></textarea>
+      <br>
+
+        <fieldset>	
+        <label for="bloodgrp">Blood Group:</label>&nbsp;&nbsp; <br>
+        <select id="bloodgrp" name="user_bloodgrp">
+        <optgroup label="        ">
+            <option value="O+">O+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="O-">O-</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+      </optgroup>
+        </select>
+        <br>
+          <label>Phone Number:</label><br>
+          <input type="text" id="phoneno" name="user_phoneno"><br>
+        
+        </fieldset><br><br>
+       <center> <button type="submit" autofocus>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+	&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><center>
+      </form>
+      </div>
+    </div>
+
+</body>
+</html>
