@@ -1,0 +1,251 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search for Donars</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     
+           <style>
+             .container-fluid {
+             padding-top: 20px;
+             padding-bottom: 20px;
+            }
+            body{
+           background-color:#707B7C;
+           color : #ffffff
+           }
+           .navbar {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          font-size: 15px;
+          letter-spacing: 2px;
+          }
+
+        .navbar-nav li a:hover {
+         color: #4A96AD !important;
+         }
+          .sidenav {
+      padding-top: 100px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+.btn-outlined {
+    
+border-radius: 0;
+  
+  -webkit-transition: all 0.3s;
+    
+   -moz-transition: all 0.3s;
+        
+    transition: all 0.3s;
+}
+
+.btn-outlined.btn-primary {
+  
+  background: none;
+ 
+   border: 3px solid #ffffff;
+   
+ color: #ffffff;
+
+}
+
+.btn-outlined.btn-primary:hover,
+.btn-outlined.btn-primary:active {
+    
+color: #000000;
+    background: #ffffff;
+    border-color: #ffffff:
+
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+   <strong>
+      <a class="navbar-brand" href="BB.html">BLOOD DONATION</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html">Donate</a></li>
+        <li><a href="sfd.html">Search For Donors</a></li>
+        <li><a href="chennai.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </div>
+</strong>
+</nav> 
+
+
+<br><div id="opos"></div>
+<div>
+  <div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="opos(1)">O+(O Positive)  &emsp;</button></div>
+  <div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="oneg(2)">O- (O Negative) &emsp;</button>  </div>
+  <div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="apos(3)">A+ (A Positive) &emsp;&emsp;&nbsp; </button> </div>
+<div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="aneg(4)">A- (A Negative) &emsp;&emsp;</button></div>
+</div>
+<div style="height:50px"></div>
+<div>
+<div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="bpos(5)">B+ (B Positive)   &emsp; </button> </div> 
+<div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="bneg(6)">B- (B Negative)   &emsp;</button></div>
+<div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="abpos(7)">AB+ (AB Positive) &emsp;</button></div>
+<div class="col-md-3"><button class="btn btn-outlined  btn-primary btn-md" onclick="abneg(8)">AB- (AB Negative)&emsp;</button></div>
+</div>
+<br>
+<script>
+function opos(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+	xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+
+function oneg(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+
+
+function apos(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+function aneg(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+
+function bpos(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+function bneg(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+
+function abpos(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+
+function abneg(str){
+ if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } 
+   else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","details.php?q="+str,true);
+        xmlhttp.send();
+}
+</script>	
+<br>
+<br>
+<div id="txtHint"><center><img src="do.jpg" height="75%"></center></img></div>
+
+</body>
+</html>
